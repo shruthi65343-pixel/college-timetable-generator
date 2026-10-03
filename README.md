@@ -73,3 +73,66 @@ An algorithm-driven college hackathon prototype built with **React**, **Vite**, 
 5. **Multi-Perspective Timetable Grid**:
    - Grid view toggles: **By Student Batch**, **By Faculty Member**, **By Room Allocation**.
    - Color-coded cells with zero-conflict badges and printable layout.
+   - # 🎓 Smart College Timetable Generator
+
+### Conflict-Free Timetable Generation using Graph Coloring, Greedy & Backtracking
+
+A smart, algorithm-driven college timetable generation system that creates conflict-free schedules for student batches while considering **faculty availability, room availability, subjects, and time slots**.
+
+The project is designed as a hackathon prototype with an emphasis on **explainable scheduling** — the system not only generates a timetable but also shows why scheduling decisions were accepted, rejected, or changed.
+
+---
+
+## 🚀 Problem Statement
+
+Creating a college timetable manually is a complex scheduling problem.
+
+A timetable must coordinate:
+
+- 👨‍🎓 Student batches
+- 👩‍🏫 Faculty
+- 🏫 Rooms
+- 📚 Subjects
+- 🕐 Available time slots
+
+A scheduling decision can create multiple conflicts.
+
+### Major conflicts
+
+**Faculty Clash**  
+A faculty member cannot teach two classes at the same time.
+
+**Room Clash**  
+A room cannot be assigned to two classes at the same time.
+
+**Student-Batch Clash**  
+A student batch cannot attend two subjects at the same time.
+
+The goal is to automatically generate a valid timetable while satisfying these constraints.
+
+---
+
+## 💡 Our Solution
+
+The **Smart College Timetable Generator** combines three algorithmic approaches:
+
+```text
+Input Data
+    ↓
+Conflict Graph
+    ↓
+Graph Coloring
+    ↓
+Greedy Assignment
+    ↓
+Constraint Checking
+    ↓
+Conflict?
+   ↙   ↘
+ YES    NO
+  ↓      ↓
+Backtrack  Accept
+  ↓
+Try Alternative Slot
+  ↓
+Final Timetable
