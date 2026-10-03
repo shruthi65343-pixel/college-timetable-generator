@@ -49,6 +49,35 @@ An algorithm-driven college hackathon prototype built with **React**, **Vite**, 
 ---
 
 ## 🌟 Key Features & Visualizations
+## 🚀 Problem Statement
+
+Creating a college timetable manually is a complex scheduling problem.
+
+A timetable must coordinate:
+
+- 👨‍🎓 Student batches
+- 👩‍🏫 Faculty
+- 🏫 Rooms
+- 📚 Subjects
+- 🕐 Available time slots
+
+A scheduling decision can create multiple conflicts.
+
+### Major conflicts
+
+**Faculty Clash**  
+A faculty member cannot teach two classes at the same time.
+
+**Room Clash**  
+A room cannot be assigned to two classes at the same time.
+
+**Student-Batch Clash**  
+A student batch cannot attend two subjects at the same time.
+
+The goal is to automatically generate a valid timetable while satisfying these constraints.
+
+---
+
 
 1. **Dashboard Page**:
    - High-level metric cards for Student Batches, Subjects, Faculty, Rooms, and Time Slots.
@@ -83,34 +112,6 @@ The project is designed as a hackathon prototype with an emphasis on **explainab
 
 ---
 
-## 🚀 Problem Statement
-
-Creating a college timetable manually is a complex scheduling problem.
-
-A timetable must coordinate:
-
-- 👨‍🎓 Student batches
-- 👩‍🏫 Faculty
-- 🏫 Rooms
-- 📚 Subjects
-- 🕐 Available time slots
-
-A scheduling decision can create multiple conflicts.
-
-### Major conflicts
-
-**Faculty Clash**  
-A faculty member cannot teach two classes at the same time.
-
-**Room Clash**  
-A room cannot be assigned to two classes at the same time.
-
-**Student-Batch Clash**  
-A student batch cannot attend two subjects at the same time.
-
-The goal is to automatically generate a valid timetable while satisfying these constraints.
-
----
 
 ## 💡 Our Solution
 
